@@ -10,6 +10,10 @@ namespace InterviewTask.Models
         public string Description { get; set; }
         public string TelephoneNumber { get; set; }
 
+        public string CurrentStatus { get; set; }
+        public string CurrentStatusInfo { get; set; }
+
+
         public List<int> MondayOpeningHours { get; set; }
         public List<int> TuesdayOpeningHours { get; set; }
         public List<int> WednesdayOpeningHours { get; set; }
