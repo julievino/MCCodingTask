@@ -12,7 +12,7 @@ namespace InterviewTask.Models
 
         public string CurrentStatus { get; set; }
         public string CurrentStatusInfo { get; set; }
-
+        public string Location { get; set; }
 
         public List<int> MondayOpeningHours { get; set; }
         public List<int> TuesdayOpeningHours { get; set; }

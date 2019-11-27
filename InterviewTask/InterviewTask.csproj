@@ -137,6 +137,9 @@
     <Compile Include="Services\HelperServiceFactory.cs" />
     <Compile Include="Services\HelperServiceRepository.cs" />
     <Compile Include="Services\IHelperServiceRepository.cs" />
+    <Compile Include="Controllers\OpenWeatherMapController.cs" />
+    <Compile Include="Models\OpenWeatherMap.cs" />
+    <Compile Include="Models\OpenWeatherMapServiceModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
