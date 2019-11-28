@@ -28,7 +28,7 @@ namespace InterviewTask.Services
                 SaturdayOpeningHours = closedTimes,
                 SundayOpeningHours = closedTimes,
                 TelephoneNumber = "0207 0000000",
-                Location = "London,UK"
+                Location = "London"
             };
 
             var northLondonHelper = new HelperServiceModel

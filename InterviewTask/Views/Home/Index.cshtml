@@ -1,6 +1,6 @@
 ﻿
 @model IEnumerable<InterviewTask.Models.HelperServiceModel>
-@model InterviewTask.Models.OpenWeatherMap
+
 
 <!-- Header -->
 <header class="header header-border mb-4">
@@ -210,9 +210,10 @@
                         <a class="card__link--overlay" href="//www.mariecurie.org.uk/help/nursing-services" rel="bookmark" title="Nursing services">
                             <span class="sr-only">@obj.Title</span>
                         </a>
-                         <input type="button" value="Check Weather" onclick="location.href='<%: @Url.Action("index", "OpenWeatherMapController", new { city = obj.Location }) %>'" />
-
+                     
                     </article>
+                       <input type="button" value="Detail" onclick="location.href='@Url.Action("Index", "OpenWeatherMapController")?city=London'" />
+
                 </div>
              </div>
              }
