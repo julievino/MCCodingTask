@@ -178,6 +178,8 @@
                
                 <!-- Marie Curie Helper Service card -->
                 <div class="block promomanualblock col-md-4 col-sm-12">
+                     <form action="" method="post">
+                     <button class="btn btn-info" type="button" id="addressSearch"  onclick="location.href='@Url.Action("ShowMap", "OpenWeatherMap")?city=@obj.Location'">Weather</button></form>
                     <article class="card @style">
                         <div class="card__main">
                             <!-- Card title -->
@@ -212,9 +214,7 @@
                         </a>
                      
                     </article>
-                    <form action="" method="post">
-                     <button class="btn btn-info" type="button" id="addressSearch"  onclick="location.href='@Url.Action("ShowMap", "OpenWeatherMap")?city=@obj.Location'">Weather</button></form>
-                   </div>
+                      </div>
              </div>
              }
         </div>
