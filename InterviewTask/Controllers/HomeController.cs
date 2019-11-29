@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using InterviewTask.Services;
 using InterviewTask.Models;
 using System.Collections;
+using InterviewTask.Helpers;
 
 namespace InterviewTask.Controllers
 {
@@ -28,12 +29,12 @@ namespace InterviewTask.Controllers
             }
             catch (Exception ex)
             {
-                Logger("excpetion raised: " + ex.InnerException);
+                Util.Logger("excpetion raised: " + ex.InnerException);
                 return View("Error");
             }
             finally
             {
-                Logger("Time of Access: " + DateTime.Now + "IP address: " + GetIpValue());
+                Util.Logger("Time of Access: " + DateTime.Now + "IP address: " + GetIpValue());
             }
         }
 
@@ -172,20 +173,6 @@ namespace InterviewTask.Controllers
            
 
         }
-
-        public static  void Logger(String lines)
-        {
-
-            // Write the string to a file.append mode is enabled so that the log
-            // lines get appended to  test.txt than wiping content and writing the log
-
-            System.IO.StreamWriter file = new System.IO.StreamWriter("c:\\test.txt", true);
-            file.WriteLine(lines);
-
-            file.Close();
-
-        }
-
 
         private string GetIpValue()
         {

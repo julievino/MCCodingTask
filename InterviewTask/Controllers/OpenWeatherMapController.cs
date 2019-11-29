@@ -11,6 +11,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
 using Newtonsoft.Json;
+using InterviewTask.Helpers;
 
 namespace InterviewTask.Controllers
 {
@@ -63,13 +64,13 @@ namespace InterviewTask.Controllers
                         openWeatherMap.apiResponse = sb.ToString();
                     }
                 }
+                
                 catch (Exception ex)
                 {
-                    //Log exception
+                    Util.Logger("excpetion raised: " + ex.InnerException);
+                    return View("Error");
                 }
-                /*End*/
-               
-               
+
             }
             else
             {

@@ -140,6 +140,7 @@
     <Compile Include="Controllers\OpenWeatherMapController.cs" />
     <Compile Include="Models\OpenWeatherMap.cs" />
     <Compile Include="Models\OpenWeatherMapServiceModel.cs" />
+    <Compile Include="Helpers\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
