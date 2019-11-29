@@ -12,11 +12,11 @@ namespace InterviewTask
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+      
             routes.MapRoute(
-                name: "OpenWeatherMap",
-                url: "OpenWeatherMapController/Index/{city}",
-                defaults: new { controller = "OpenWeatherMapController", action = "Index", city = UrlParameter.Optional }
+            "OpenWeatherMap",
+            "OpenWeatherMap/ShowMap/{city}",
+            new { controller = "OpenWeatherMap", action = "ShowMap", city= UrlParameter.Optional }
             );
 
             routes.MapRoute(

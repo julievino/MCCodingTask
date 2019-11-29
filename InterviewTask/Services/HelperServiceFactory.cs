@@ -28,7 +28,7 @@ namespace InterviewTask.Services
                 SaturdayOpeningHours = closedTimes,
                 SundayOpeningHours = closedTimes,
                 TelephoneNumber = "0207 0000000",
-                Location = "London"
+                Location = "London,uk"
             };
 
             var northLondonHelper = new HelperServiceModel
@@ -43,7 +43,8 @@ namespace InterviewTask.Services
                 FridayOpeningHours = closedTimes,
                 SaturdayOpeningHours = closedTimes,
                 SundayOpeningHours = closedTimes,
-                TelephoneNumber = "0207 0000000"
+                TelephoneNumber = "0207 0000000",
+                Location="London,uk"
             };
 
             var bristolHelper = new HelperServiceModel
@@ -58,7 +59,8 @@ namespace InterviewTask.Services
                 FridayOpeningHours = weekdayOpeningTimes,
                 SaturdayOpeningHours = closedTimes,
                 SundayOpeningHours = closedTimes,
-                TelephoneNumber = "0117 0000000"
+                TelephoneNumber = "0117 0000000",
+                Location = "Bristol,uk"
             };
 
             var somersetHelper = new HelperServiceModel
@@ -73,7 +75,8 @@ namespace InterviewTask.Services
                 FridayOpeningHours = weekdayOpeningTimes,
                 SaturdayOpeningHours = closedTimes,
                 SundayOpeningHours = closedTimes,
-                TelephoneNumber = "0207 0000000"
+                TelephoneNumber = "0207 0000000",
+                Location= "Somerset,uk"
             };
 
             var nottinghamHelper = new HelperServiceModel

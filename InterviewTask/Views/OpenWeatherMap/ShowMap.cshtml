@@ -1,0 +1,22 @@
+﻿@using InterviewTask.Models
+@model InterviewTask.Models.OpenWeatherMap
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Model.Region </title>
+</head>
+<body>
+
+  <text>
+        
+        @Html.Raw(@Model.apiResponse)
+        
+   </text>
+</body>
+</html>
+
+

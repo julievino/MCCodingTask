@@ -212,9 +212,9 @@
                         </a>
                      
                     </article>
-                       <input type="button" value="Detail" onclick="location.href='@Url.Action("Index", "OpenWeatherMapController")?city=London'" />
-
-                </div>
+                    <form action="" method="post">
+                     <button class="btn btn-info" type="button" id="addressSearch"  onclick="location.href='@Url.Action("ShowMap", "OpenWeatherMap")?city=@obj.Location'">Weather</button></form>
+                   </div>
              </div>
              }
         </div>
