@@ -71,7 +71,6 @@ Create a simple logger service (from scratch, to a file) that can capture all re
 
 We'd like the current weather for each of the helper regions under their name - rough location is fine.  Create a button, that when pressed calls an action on a controller that sends a request to a weather API https://openweathermap.org/current (full documentation on that page) and display the response on the page.  Do not worry too much about the presentation - this isn't a test of front-end skills.  
 
-
 ### Integration
 The code that handles the Helper Service inforation has been provided for you.
 
